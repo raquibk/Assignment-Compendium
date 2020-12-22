@@ -1,0 +1,19 @@
+Name : Raquib Khan Lavani
+ID #: 1622108
+CMPUT 274 Fall 2020
+Weekly Exercise 1: Password Validator
+
+Included File(s):
+- validator.py : This .py file contains two functions; namely validate(password) and generate(n)
+
+Notes and Assumptions
+The file validator.py contains two functions as mentioned above:
+
+-validate(password) : This function takes in a password, and checks security level of that password based on a few preset guidelines
+                      and criteria. It categorizes each input into three categories based on the guidelines:
+                      invalid, insecure and secure.
+
+-generate(n) : This function generates a password based on the formerly set guidelines and criteria. To ensure randomness and non-unif-
+                ormity, this function shuffles the data set, then picks data accordingly. This function assumes that the argument 'n'
+                inputted is greater than 8, and will not work if the value of 'n' is lesser than 8.
+                    

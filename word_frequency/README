@@ -1,0 +1,41 @@
+# --------------------------------------------
+#   Name: Raquib Khan Lavani
+#   ID: 1622018
+#   CMPUT 274, Fall 2020
+#
+#   Weekly Exercise 3: Word Frequency
+# --------------------------------------------
+
+Included Files:
+	* freq.py
+	* README
+
+Running Instructions: Input a command-line argument in the format -
+					  python3 freq.py <input_file_name>
+					  (Where <input_file_name> is the name of the file)
+
+Notes:
+
+The file 'freq.py' has three functions in it, namely: 'input_file', 'word_counter', and 'output_file'. The code initially 
+starts with a function that reads in the command-line argument provided, and extracts the file name required for input.
+The role of the functions are:
+
+input_file: This function first checks if the format of the given command-line argument is valid. If the filename given is
+			not valid, it prints an error message and ends the program. Moreover, if there are too many/too few command-line
+			arguments, the function prints an error message, the correct format and exits the program. Therefore, the program
+			is continued only if the format of the command-line argument is correct, and if the input file exists in the same
+			directory.
+
+word_counter: This function handles the making of a word frequency table. It does so by splitting all the words (repetitions
+			  included) in the input file and placing them as the elements of a list. It then takes a set which has all the 
+			  words (no repetitions), compares the two lists, and counts the frequency in a dictionary. The relative frequency
+			  is also calculated the same list and dictionary. Ultimately, we get a dictionary with the word count, and a list
+			  with the relative frequency. We then merge the two into a list with the final table.
+
+output_file: This function simply writes the frequency table into an output file, and closes it.
+
+Assumptions:
+
+This program assumes that the input file will be in the same directory of freq.py, and that the input file is in plaintext form.
+It also assumes that the output file is empty/does not exist. 
+

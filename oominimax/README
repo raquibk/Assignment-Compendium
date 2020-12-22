@@ -1,0 +1,47 @@
+# --------------------------------------------
+#   Name: Raquib Khan Lavani
+#   ID: 1622108
+#   CMPUT 274, Fall 2020
+#
+#   Weekly Exercise #6: OOMinimax
+# --------------------------------------------
+
+Included Files:
+	* oominimax.py
+	* submit.git.log.txt
+	* debugger.png
+	* README
+
+Running Instructions: Input a command-line argument in the format - python3 oominimax.py
+
+Notes:
+OOminimax is an object oriented approach of minimax.py, which is an AI powered tic-tac-toe game. 
+OOMinimax utilizes two classes, and two functions, namely:
+
+	-Class Board:
+		The first class, 'Board' encapsulates the board which is used to play the Tic-Tac-Toe game. It also hides the working and
+		implementation of setting moves on the board, validating the move, and checking if a player has won the game. This class
+		solves the problem of calling (and modifying) two global variables, 'state' and 'board' for every function which needs it
+		to be a parameter.
+
+	-Class Turns
+		The second class, 'Turns' is utilized to set the turn alternatively between the human and the computer. It takes in an
+		instance of the board object, and calls several attributes of the object. In addition, for the computer's turn, it also calls
+		minimax algorithm to decide the best move to be played for the computer.
+
+	-Minimax
+		The Minimax algorithm is the backbone of the computer's decision in this game. Minimax is a recursive algorithm, which builds
+		a tree by playing the best possible move for each player, for every possible move on the board, and chooses the shortest path in
+		the tree to victory. 
+
+	-Main
+		Then main function does the error handling of human input, and checks for each turn whether a player has won or not. It also 
+		instantiates a board object and a turns object, and modifies the board instances, and swwitches turns between the human and the AI.
+
+-submit.git.log.txt is a log of all the commits I made to my repository. In order to save the progress I made, and also to track the 
+	changes in my code, I committed changes whenever I progressed/ did something functional in my code. There are a total of 9 commits.
+
+-debugger.png is a screenshot of the debugging screen of Wing Personal IDE. 
+
+Assumptions:
+There are only two symbols to choose from in this game: X and O. 

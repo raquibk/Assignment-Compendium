@@ -1,0 +1,53 @@
+commit d6c0d29a09c6d5619967285d1fb15759c3498f76
+Author: Raquib Khan Lavani <r.raquib01@gmail.com>
+Date:   Sat Nov 14 08:12:22 2020 -0700
+
+    Added few docstrings, fixed minor bug
+
+commit b167da8db9ec34c0f02216224f40fab2b4951a99
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Sat Nov 14 01:33:44 2020 -0700
+
+    Added comments, oominimaxv3 is fully functional
+
+commit cdbdc8aeebaecbab57f1437814b9c52756f6e2b1
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Fri Nov 13 23:03:59 2020 -0700
+
+    Finalized raw code of oominimax
+
+commit 7460c0fc29fd9d134543f2c32067dbfb5958ab84
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Fri Nov 13 17:53:12 2020 -0700
+
+    Minimax functioning, only 1 class defined
+
+commit 3b22f3849d2708ae35ec2d175253f936f5bf31a6
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Thu Nov 12 16:48:29 2020 -0700
+
+    Added human_turn, ai_turn; Board Class complete
+
+commit e4ce39b83beb6d755916c1988d87e7afbd94659c
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Thu Nov 12 15:40:46 2020 -0700
+
+    Completed Board class partially
+
+commit 5132ccf06f70c6f93b74f427e2993d1c4c052949
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Wed Nov 11 16:25:44 2020 -0700
+
+    Fixed printing bug, can recognize human turn
+
+commit af3850c4c14630f3b4695822c0bd8d6681dc6ccb
+Author: Raquib Khan Lavani <you@example.com>
+Date:   Wed Nov 11 15:56:59 2020 -0700
+
+    Added human turn, fixed few bugs
+
+commit 60d573b78fa5e99d6e7572dc05fa0fc72e8be3bd
+Author: Raquib Khan Lavani <r.raquib01@gmail.com>
+Date:   Mon Nov 9 15:00:10 2020 -0700
+
+    Took screencap, added name and details

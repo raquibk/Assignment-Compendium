@@ -1,0 +1,39 @@
+# --------------------------------------------
+#   Name: Raquib Khan Lavani
+#   ID: 1622108
+#   CMPUT 274, Fall 2020
+#
+#   Weekly Exercise #4: Text Preprocessor
+# --------------------------------------------
+
+Included Files:
+	* preprocess.py
+	* README
+
+Running Instructions: Input a command-line argument in the format -
+					  python3 preprocess.py <mode>
+					  (Where <mode> can be of 3 types:
+					   1. keep-digits
+					   2. keep-symbols
+					   3. keep-stops
+					   Then, input the sentence which needs to be preprocessed.
+
+Notes:
+The file preprocess.py has five functions, namely: keep_none(), keep_digits(), keep_symbols(), keep_stops(), and input_handler().
+The roles of the five functions are described below:
+
+1. keep_none(): This function does the complete preprocessing of the input text, i.e: It removes stopwords, punctuations/symbols,
+                and digits (only if the word consists of both numbers and letters). This function is called when the (optional)
+                mode isn't specified. It outputs the processed words as a string to the terminal.
+
+2. keep_digits(): This function does the same, except it does not remove numbers from words consisting of both numbers and
+                  letters. This functtion is called when the user specifies 'keep-digits' as the mode.
+
+3. keep_symbols(): This function does the same, except it does not symbols and punctuations. This function is called when the user specifies 		                   'keep-symbols' as the mode.
+
+4. keep_stops(): This function does the same, except it does not remove stopwords. This function is called when the user specifies 'keep-stops' 
+                 as the mode.
+
+5. input_handler(): This function is crucial to this program, as it handles the calling of the above functions, along with performing error
+                    handling. If the user inputs the command-line argument in the wrong format, this function exits the program after specifying
+                    the proper format of the command-line argument.

@@ -1,0 +1,24 @@
+Name : Raquib Khan Lavani
+ID #: 1622108
+CMPUT 274 Fall 2020
+Weekly Exercise 2: Unfair Dice
+
+Included File(s):
+- README
+- unfairDice.py: This file contains two functions, namely biased_rolls and draw_histogram
+
+Notes and Assumptions
+The file validator.py contains two functions as mentioned above:
+
+biased_rolls: This function takes in a list of probabilities of each side of an m-sided die, a 'random' seed number and the number 
+              rolls to attempt. Depending upon the probability of each side, it then creates intervals which have that corresponding 
+              percentage (or share) of the interval [0,1). It then takes the random choice, and checks whether it lies in any of these
+              intervals. If it does, it maps it to the side and appends the side to the 'rolls' list. It does this an 'n' number of
+              times.
+
+draw_histogram: This function takes in the number of sides of the die, the list of 'rolls', and a maximum scaled width. It plots the 
+                frequency of each number which occurs in rolls according to a max scaled width. If the frequency of the number does not
+                reach the max scaled width, it fills the corresponding histogram column with hyphens.
+
+This function assumes that the sum of all probabilities in the list 'prob_list' is equal to 1. It also assumes that the length of 
+prob_list is equal to the number of sides of the die.

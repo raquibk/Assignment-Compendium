@@ -1,0 +1,44 @@
+# --------------------------------------------
+#   Name: Raquib Khan Lavani
+#   ID: 1622108
+#   CMPUT 274, Fall 2020
+#
+#   Weekly Exercise #7: Dr. Moneybags
+# --------------------------------------------
+
+Included Files: - moneybags.py
+                - README
+
+Running Instructions: Input a command line argument in the format: python3 moneybags.py
+                      Then, simply input a number 'n', which is the number of applicants.
+                      Then input the networth of each individual in each line of input.
+
+Notes:
+
+The program moneybags.py takes in a number 'n' which is the number of applicants to the elite club of
+Dr. Moneybags. It then takes in 'n' lines of input, each of which describes the net worth of each
+applicant.
+Moneybags finds the largest number 'N' such that there are atleast N applicants with N million
+dollars. This number is also called as the threshold.
+moneybags.py is implemented using three functions, namely:
+
+- threshold: This function has the main loop of the program, which finds the threshold of the elite club.
+             It first takes the list of the net worths of each person. It then applies sort, to sort the
+             list in ascending order. Then it uses a counter, 'm' as the threshold, which is initiated
+             as 0. Further, a loop is implemented which checks if there are atleast m applicants with
+             m million dollars. With each value of m which is satisfied, m is incremented by 1 and 
+             is tested again. Once this condtion fails, the loop is exited, and m is returned.
+
+- moneybags: This function makes and returns moneylist, the list which is used by the above function.
+             It takes in the number of applicants, and runs a for loop to get the net worth of each 
+             applicant. It then appends the net worth of each applicant to moneylist.
+
+- main: This function returns 'n', the number of applicants which is passed in as a parameter to moneybags.
+        It also calls the above two functions, and prints the final output to the terminal.
+
+Assumptions:
+
+Although the program can handle more than the limit, it is assumed that the number of applicants will be lesser
+than or equal to 100000. The networth of each applicant is also assumed to be lesser than 1000 million
+(0 <= W <= 1000000000). It also assumes that there will be 'n' lines of input after inputting the value of 'n'
+i.e each applicant has an associated net worth value.

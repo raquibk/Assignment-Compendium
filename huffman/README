@@ -1,0 +1,61 @@
+# --------------------------------------------
+#   Name: Raquib Khan Lavani
+#   ID: 1622108
+#   CMPUT 274, Fall 2020
+#
+#   Assignment #2: Huffman Coding
+# --------------------------------------------
+
+Included Files: - util.py
+                - README
+
+Running Instructions:   - To check the functionality of util.py, it is recommended to have
+                        all the files included originally.
+                        To check decompression functionality using a webserver, Change to wwwroot/ directory, 
+                        and run:
+                                        python3 ../webserver.py
+                        Further, open http://localhost:8000 to check a few images and text decompressed
+                    
+                        - To check overall functionality, copy the file to be compressed in the wwwroot/ directory,
+                        change to that directory, and run:
+                                        python3 ../compress.py somefile.pdf (pdf taken as example)
+                        This will generate somefile.pdf and will host the decompressed version at the URL:
+                        https://localhost:8000/somefile.pdf.
+
+Notes:
+The program util.py utilizes Huffman Trees to compress and decompress files. It does so by using 5 functions,
+namely:
+
+read_tree: This function takes in a tree stream, which has the pickled version of the tree object which is
+           the Huffman Tree object of that file. It loads it into a variable into util.py.
+
+decode_byte: This function takes in the Huffman Tree object we obtrained from read_tree, and a BitReader
+             object. It then uses the tree to decode the BitReader object. For instance, it reads in open
+             bit (at a time). If bit is 1, it takes the right side of TreeBranch, and if the bit is 0, it
+             takes the left side. It does so continually till it reaches a TreeLeaf object. This function
+             is implemented using recursion to traverse the tree. It recursively calls decode_byte till
+             it gets a TreeLeaf value. Once a TreeLeaf is reached, it returns the value of it. This recursively
+             function is placed under a while loop to traverse the whole BitReader object and decode the whole of
+             it. It uses a Try/Except statement to catch the EOF. Once EOF is reached, it breaks the loop and
+             returns None, which indicates the EOF.
+
+decompress: The main function which decompresses the file.
+            It takes a compressed stream (from which we read the compressed input) and an uncompressed
+            stream, to which we will write the decoded output. It then instantiates BitReader and BitWriter objects
+            to read the compressed stream and write the decoded output to the uncompressed stream respectively. It
+            does so by taking one byte at a time, decoding it, and writing it to the uncompressed stream. If the byte
+            decoded is 'None' it means that the EOF is reached, which breaks the loop, stopping the decompressing
+            process. 
+
+write_tree: This function takes in the Huffman Tree object of that file, and pickles it, and writes the pickled
+            form of that tree object to the tree stream.
+
+compress: The main function which compresses the file.
+          It takes in the Huffman Tree object of that file, along with the uncompressed stream (which is the input
+          we need to compress), a compressed stream (to which we will write the compressed output). We then use a 
+          function (in huffman.py) which takes in a tree object and constructs it's encoding table. Further, we
+          instantiate a BitReader and BitWriter object to read the uncompressed stream and to write to the compressed
+          stream respectively. It then reads in 8 bits of the uncompressedstream, which represents the ASCII representation
+          of that symbol. Then, using the same encoding table, we find the path of that ASCII value, and wirte it to the
+          compressed stream. It uses Try/Except to catch the EOF, and when it is reached, we write down the path of 'None;,
+          as in our Huffman tree, 'None' represents the EOF.
