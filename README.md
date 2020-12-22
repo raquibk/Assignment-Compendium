@@ -4,7 +4,8 @@ Note: The mini projects contained in this repository were assignments given as a
       I would like to thank Dr. Paul Lu, and the CMPUT 274 team for designing and introducing such intuitive assignments, which along
       with being challenging, provided a gentle introduction followed by implementation of many fundamental topics of computing science.
 
-This repository contains projects done as assignments of CMPUT 274, a course which I thoroughly enjoyed.
+This repository contains projects done as assignments of CMPUT 274, a course which I thoroughly enjoyed. Through these projects, we learnt
+concepts and fundamentals which we eventually used to implement a Naive Bayes Classifier.
 
 ## Assignment Topics and Highlights
 
