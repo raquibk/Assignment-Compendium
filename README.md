@@ -11,10 +11,16 @@ This repository contains projects done as assignments of CMPUT 274, a course whi
 Each project file has its own README which provides a detailed expanation of the code. Each assignment encapsulates several fundamental concepts,
 mentioned below:
 
-__1. Password Validator:__ Introduction to Functions, Random module
+__1. Password Validator:__ Introduction to Functions, Random module 
+
 __2. Unfair Dice:__ Probability, Loops
+
 __3. Word Frequency:__ Introduction to Classifiers, Reading/Writing to Files, Word Frequency 
+
 __4. Text Proprocessor:__ Preprocessing, Reading Command-Line Arguments, EOF Handling
+
 __5. OO Minimax:__ Beginner Object Oriented Programming (OOP), Minimax Algorithm, Recursion
+
 __6. Moneybags:__ Efficient Sorting Algorithms, Big-O Complexity
+
 __7. Huffman Coding:__ Intermediate OOP, Compression, File I/O, bitio, Huffman Trees, Binary Search
