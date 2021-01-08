@@ -18,7 +18,7 @@ __2. Unfair Dice:__ Probability, Loops
 
 __3. Word Frequency:__ Introduction to Classifiers, Reading/Writing to Files, Word Frequency 
 
-__4. Text Proprocessor:__ Preprocessing, Reading Command-Line Arguments, EOF Handling
+__4. Text Proprocessor:__ Natural Language Processing, Reading Command-Line Arguments, EOF Handling
 
 __5. OO Minimax:__ Beginner Object Oriented Programming (OOP), Minimax Algorithm, Recursion
 
